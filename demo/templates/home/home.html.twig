@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} BookMyShow {% endblock %}
+
+
+ {% block body %}
+  
+    <h1>Login Form</h1>
+<form method="post">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+
+    <button type="submit" class="btn btn-primary" id="btn-sb">Submit</button>
+
+    {{ form_end(form) }}
+ </form>
+ {% endblock %}
+
